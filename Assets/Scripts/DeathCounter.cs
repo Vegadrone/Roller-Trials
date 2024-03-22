@@ -1,27 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeathCounter : MonoBehaviour
 {
-    private int deathCount;
-    private const string deathCountKey = "DeathCount";
+    public Text deathCounterText;
+    private int deathCount = 0;
 
     private void Awake()
     {
-        // Carica il contatore delle morti salvato
-        deathCount = PlayerPrefs.GetInt(deathCountKey, 0);
+        UpdateDeathCountUI();
     }
-    public void IncrementDeathCount()
+
+    public void IncreaseDeathCount()
     {
         deathCount++;
+        UpdateDeathCountUI();
+    }
+
+    private void UpdateDeathCountUI()
+    {
+        if (deathCounterText != null)
+        {
+            deathCounterText.text = "Death Counter: " + deathCount.ToString();
+        }
     }
     public void ResetDeathCount()
     {
         deathCount = 0;
+        UpdateDeathCountUI();
     }
-    public int GetDeathCount()
-    {
-        return deathCount;
-    }
+
 }

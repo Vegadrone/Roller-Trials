@@ -12,9 +12,11 @@ public class CollisionDetection : MonoBehaviour
    [Header("Debugging")]
    [SerializeField]Debugger logger;
    bool hasCrashed;
+   DeathCounter deathCounter;
  
    void Awake()
    {
+      deathCounter = FindObjectOfType<DeathCounter>();
       Debugger.DebuggerLoader(ref logger);
    }
 
@@ -26,7 +28,7 @@ public class CollisionDetection : MonoBehaviour
          FindAnyObjectByType<PlayerController>().DisableControls();
          SoundFXManager.instance.PlaySoundFXClip(crashSoundClip, transform, crashSoundClipVolume);
 
-        
+         deathCounter.IncreaseDeathCount();
 
          Invoke("ReloadScene", reloadTime);
          logger.Log("OUCH!" + " | " + "Il numero delle tue morti è:" ,this);  

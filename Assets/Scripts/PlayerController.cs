@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public static Vector3  playerPos;
 
 
+
     void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
