@@ -11,8 +11,8 @@ public class CollisionDetection : MonoBehaviour
    [SerializeField][Range(0f, 1f)] float crashSoundClipVolume;
    [Header("Debugging")]
    [SerializeField]Debugger logger;
-   public float deathCounter;
    bool hasCrashed;
+ 
    void Awake()
    {
       Debugger.DebuggerLoader(ref logger);
@@ -25,15 +25,17 @@ public class CollisionDetection : MonoBehaviour
          hasCrashed = true;
          FindAnyObjectByType<PlayerController>().DisableControls();
          SoundFXManager.instance.PlaySoundFXClip(crashSoundClip, transform, crashSoundClipVolume);
-         deathCounter++;
+
+        
+
          Invoke("ReloadScene", reloadTime);
-         logger.Log("OUCH!" + " | " + "Il numero delle tue morti è:" + " " + deathCounter, this);  
+         logger.Log("OUCH!" + " | " + "Il numero delle tue morti è:" ,this);  
       }
-      DontDestroyOnLoad(this);
    }
 
    private void ReloadScene()
    {
-    SceneManager.LoadScene(0);
+      SceneManager.LoadScene(0);
+      
    }
 }

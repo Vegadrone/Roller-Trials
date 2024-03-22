@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class DeathCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int deathCount;
+    private const string deathCountKey = "DeathCount";
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        // Carica il contatore delle morti salvato
+        deathCount = PlayerPrefs.GetInt(deathCountKey, 0);
+    }
+    public void IncrementDeathCount()
+    {
+        deathCount++;
+    }
+    public void ResetDeathCount()
+    {
+        deathCount = 0;
+    }
+    public int GetDeathCount()
+    {
+        return deathCount;
     }
 }
