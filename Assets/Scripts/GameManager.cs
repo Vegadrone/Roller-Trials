@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
 
        deathCounter = FindObjectOfType<DeathCounter>(); 
     }
+    private void Update() 
+    {
+      Chronometer.instance.UpdateChronometer();  
+    }
     public void ReloadScene()
     {
         SceneManager.LoadScene(0);

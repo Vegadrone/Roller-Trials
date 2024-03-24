@@ -8,10 +8,8 @@ public class Chronometer : MonoBehaviour
 {   
     public static Chronometer instance;
     [SerializeField]TMP_Text chronometerText;
-    
     private float startChronometer;
-    
-
+    private bool isChronometerRunning = true;
     void Awake()
     {
         if (instance == null)
@@ -21,8 +19,17 @@ public class Chronometer : MonoBehaviour
         startChronometer = Time.time;
     }
 
-    public void ChronometerStart()
+    public void UpdateChronometer()
     {
-        chronometerText.text = "Time:" + startChronometer.ToString("F2");
+        if (isChronometerRunning)
+        {
+            float elapsedTime = Time.time - startChronometer;
+            chronometerText.text = "Time:" + elapsedTime.ToString("F2");
+        }
+    }
+
+    public void StopChronometer()
+    {
+        isChronometerRunning = false;
     }
 }

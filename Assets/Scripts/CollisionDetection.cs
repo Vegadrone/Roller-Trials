@@ -29,6 +29,7 @@ public class CollisionDetection : MonoBehaviour
 
          deathCounter.IncreaseDeathCount();
 
+         Chronometer.instance.StopChronometer();
          GameManager.instance.Invoke("ReloadScene", reloadTime);
          logger.Log("OUCH!" + " | " + "Il numero delle tue morti è:" ,this);  
       }

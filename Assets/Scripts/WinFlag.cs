@@ -22,6 +22,7 @@ public class WinFlag : MonoBehaviour
         if (other.tag =="Player")
         {
             SoundFXManager.instance.PlaySoundFXClip(winSoundClip, transform, winSoundClipVolume);
+            Chronometer.instance.StopChronometer();
             GameManager.instance.Invoke("ReloadScene", reloadTime);
             logger.Log("HAI VVVINTO!!!", this);
         }
