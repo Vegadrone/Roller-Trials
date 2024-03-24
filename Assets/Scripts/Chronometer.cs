@@ -7,7 +7,10 @@ using System.Threading;
 public class Chronometer : MonoBehaviour
 {   
     public static Chronometer instance;
+    [Header("Text")]
     [SerializeField]TMP_Text chronometerText;
+    [Header("Debugging")]
+    [SerializeField] Debugger logger;
     private float startChronometer;
     private bool isChronometerRunning = true;
     void Awake()
@@ -16,6 +19,7 @@ public class Chronometer : MonoBehaviour
         {
             instance = this;
         }
+        Debugger.DebuggerLoader(ref logger);
         startChronometer = Time.time;
     }
 

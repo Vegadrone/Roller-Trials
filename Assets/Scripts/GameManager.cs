@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     DeathCounter deathCounter;
+    [Header("Debugging")]
+    [SerializeField] Debugger logger;
 
     void Awake()
     {
@@ -14,8 +16,9 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+        Debugger.DebuggerLoader(ref logger);
 
-       deathCounter = FindObjectOfType<DeathCounter>(); 
+        deathCounter = FindObjectOfType<DeathCounter>(); 
     }
     private void Update() 
     {
