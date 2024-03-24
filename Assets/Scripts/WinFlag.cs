@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class WinFlag : MonoBehaviour
 {
@@ -13,6 +12,7 @@ public class WinFlag : MonoBehaviour
     [SerializeField][Range(0f, 1f)]float winSoundClipVolume;
     [Header("Debugging")]
     [SerializeField] Debugger logger;
+
     void Awake()
     {
         Debugger.DebuggerLoader(ref logger);
@@ -22,12 +22,8 @@ public class WinFlag : MonoBehaviour
         if (other.tag =="Player")
         {
             SoundFXManager.instance.PlaySoundFXClip(winSoundClip, transform, winSoundClipVolume);
-            Invoke("ReloadScene", reloadTime);
+            GameManager.instance.Invoke("ReloadScene", reloadTime);
             logger.Log("HAI VVVINTO!!!", this);
         }
-    }
-    private void ReloadScene()
-    {
-            SceneManager.LoadScene(0);
     }
 }

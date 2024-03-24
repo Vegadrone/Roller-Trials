@@ -2,15 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class DeathCounter : MonoBehaviour
 {
-    public Text deathCounterText;
+    public static DeathCounter Instance;
+    public TMP_Text deathCounterText;
     private int deathCount = 0;
 
     private void Awake()
     {
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         UpdateDeathCountUI();
     }
 
@@ -24,7 +35,7 @@ public class DeathCounter : MonoBehaviour
     {
         if (deathCounterText != null)
         {
-            deathCounterText.text = "Death Counter: " + deathCount.ToString();
+            deathCounterText.text = "Crash Counter: " + deathCount.ToString();
         }
     }
     public void ResetDeathCount()

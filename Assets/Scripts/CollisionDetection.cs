@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CollisionDetection : MonoBehaviour
 {
@@ -30,14 +29,8 @@ public class CollisionDetection : MonoBehaviour
 
          deathCounter.IncreaseDeathCount();
 
-         Invoke("ReloadScene", reloadTime);
+         GameManager.instance.Invoke("ReloadScene", reloadTime);
          logger.Log("OUCH!" + " | " + "Il numero delle tue morti è:" ,this);  
       }
-   }
-
-   private void ReloadScene()
-   {
-      SceneManager.LoadScene(0);
-      
    }
 }
