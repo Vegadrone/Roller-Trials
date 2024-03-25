@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    DeathCounter deathCounter;
+    
     [Header("Debugging")]
     [SerializeField] Debugger logger;
 
@@ -16,9 +16,7 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
-        Debugger.DebuggerLoader(ref logger);
-
-        deathCounter = FindObjectOfType<DeathCounter>(); 
+        Debugger.DebuggerLoader(ref logger); 
     }
     private void Update() 
     {
@@ -30,7 +28,6 @@ public class GameManager : MonoBehaviour
     }
     public void QuitGame()
     {
-        deathCounter.ResetDeathCount();
         Application.Quit();
     }
 }

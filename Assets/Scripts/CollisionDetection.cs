@@ -27,7 +27,7 @@ public class CollisionDetection : MonoBehaviour
          FindAnyObjectByType<PlayerController>().DisableControls();
          SoundFXManager.instance.PlaySoundFXClip(crashSoundClip, transform, crashSoundClipVolume);
 
-         deathCounter.IncreaseDeathCount();
+         deathCounter.UpdateDeathCounter();
 
          Chronometer.instance.StopChronometer();
          GameManager.instance.Invoke("ReloadScene", reloadTime);

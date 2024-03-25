@@ -25,7 +25,7 @@ public class TeleportSystem : MonoBehaviour
         portal1Pos = portal2.position;
         currentPlayerPos = PlayerController.playerPos;
         Teleport(currentPlayerPos, portal1Pos, portal2Pos);
-        //logger.Log("Questa è la posizione corrente del player;" + " " + currentPlayerPos, this); 
+        logger.Log("Questa è la posizione corrente del player;" + " " + currentPlayerPos, this); 
     }
 
     void Teleport(Vector3 currentPlayerPos, Vector3 portal1Pos, Vector3 portal2Pos)

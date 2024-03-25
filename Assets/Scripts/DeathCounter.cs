@@ -6,42 +6,22 @@ using TMPro;
 
 public class DeathCounter : MonoBehaviour
 {
-    public static DeathCounter Instance;
-    public TMP_Text deathCounterText;
-    private int deathCount = 0;
+    [Header("Debugging")]
+    [SerializeField] Debugger logger;
+    [SerializeField] TMP_Text deathCounterText;
+    private int deathCounter;
+    private int currentDeathCount;
 
-    private void Awake()
+    private void Awake() 
     {
-
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        UpdateDeathCountUI();
+        Debugger.DebuggerLoader(ref logger);
+        PlayerPrefs.SetInt("DeathCount", deathCounter);
+        deathCounterText.text = "Crash Count: " + deathCounter.ToString();
     }
 
-    public void IncreaseDeathCount()
+    public void UpdateDeathCounter()
     {
-        deathCount++;
-        UpdateDeathCountUI();
+        deathCounter++;
+        logger.Log(deathCounter, this);
     }
-
-    private void UpdateDeathCountUI()
-    {
-        if (deathCounterText != null)
-        {
-            deathCounterText.text = "Crash Counter: " + deathCount.ToString();
-        }
-    }
-    public void ResetDeathCount()
-    {
-        deathCount = 0;
-        UpdateDeathCountUI();
-    }
-
 }
