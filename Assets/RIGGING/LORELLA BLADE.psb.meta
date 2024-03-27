@@ -32,7 +32,7 @@ ScriptedImporter:
     sRGBTexture: 1
     spriteMode: 2
     spriteExtrude: 1
-    spriteMeshType: 0
+    spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
     spritePixelsToUnits: 100
@@ -105,7 +105,7 @@ ScriptedImporter:
       y: 1007
       width: 1120
       height: 1295
-    spriteID: 99b9f33ad90922444a3f77d2df3bba3c
+    spriteID: 2efecd64c1040f04e8dfb0f044670278
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -123,10 +123,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1603
-      y: 5704
-      width: 579
-      height: 1258
-    spriteID: 9184d59e58bf03a4dade618253b5e63e
+      y: 5727
+      width: 870
+      height: 1116
+    spriteID: f31a4041e032edf48978cc0d0f2e6ed6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -134,8 +134,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1603, y: 5704}
-    spritePosition: {x: 1102, y: 4500}
+    uvTransform: {x: 1603, y: 5727}
+    spritePosition: {x: 821, y: 4653}
   - name: AVAMBRACCIO (D)
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,10 +144,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1603
-      y: 6970
-      width: 331
-      height: 1168
-    spriteID: f0224a14a6bd7f24c9ec781837b18bae
+      y: 6851
+      width: 442
+      height: 1147
+    spriteID: 0976ad3f7bf3f2d4baf8ff5a808d2531
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,8 +155,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1603, y: 6970}
-    spritePosition: {x: 1076, y: 3624}
+    uvTransform: {x: 1603, y: 6851}
+    spritePosition: {x: 672, y: 3784}
   - name: MANO (D)
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -164,11 +164,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3133
-      y: 4
-      width: 396
-      height: 792
-    spriteID: d72e733ab76e9134681e4e7096542001
+      x: 2053
+      y: 6851
+      width: 383
+      height: 805
+    spriteID: 18932db7d2df54442b20c9a7c2fc6a0f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,8 +176,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3133, y: 4}
-    spritePosition: {x: 1189, y: 2949}
+    uvTransform: {x: 2053, y: 6851}
+    spritePosition: {x: 554, y: 3102}
   - name: COSCIA (D)
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -186,10 +186,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4614
+      y: 4576
       width: 1025
       height: 1884
-    spriteID: 1a062b6e1bc8f164e98177cca4d22f45
+    spriteID: ccf17fb14b00f784db7846b9d116f187
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4614}
+    uvTransform: {x: 4, y: 4576}
     spritePosition: {x: 1209, y: 2303}
   - name: ROLLERBOOTS (D)
     originalName: 
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 2310
       width: 755
       height: 1693
-    spriteID: 4e0f7f638aaabda4fa9b79499a087639
+    spriteID: 0a23817d6a0125747a13953c02ab622a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -227,11 +227,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 6506
+      x: 1603
+      y: 4
       width: 1522
       height: 995
-    spriteID: 599987edd6ab92443aa9320397eda365
+    spriteID: b71aa6289097c0146887163adc4fa443
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -239,7 +239,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 6506}
+    uvTransform: {x: 1603, y: 4}
     spritePosition: {x: 410, y: 114}
   - name: COLLO
     originalName: 
@@ -248,11 +248,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3537
-      y: 4
+      x: 3133
+      y: 397
       width: 498
       height: 585
-    spriteID: 41b4e849845fa76408c8f7187be49a5b
+    spriteID: 654c8bb99f2a3114aa6569630fa0f488
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3537, y: 4}
+    uvTransform: {x: 3133, y: 397}
     spritePosition: {x: 1607, y: 5628}
   - name: BUSTO
     originalName: 
@@ -273,7 +273,7 @@ ScriptedImporter:
       y: 4
       width: 1591
       height: 2906
-    spriteID: 2eab98345aa8c004093964b743d4e8c0
+    spriteID: 641a6bebe0dac0d45b7d1510e269c927
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -291,10 +291,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 7509
+      y: 7479
       width: 1262
       height: 583
-    spriteID: c089325228113664ba89521619649902
+    spriteID: 7a781fb11f701a849bc8deafbc04f08c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -302,7 +302,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 7509}
+    uvTransform: {x: 4, y: 7479}
     spritePosition: {x: 1978, y: 5006}
   - name: MANO (S)
     originalName: 
@@ -311,11 +311,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2731
-      y: 1318
+      x: 3133
+      y: 4
       width: 806
       height: 385
-    spriteID: de1f94eac0572d5468472174d4a54d3c
+    spriteID: f08b5248501d44d458627a67c6b9648a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -323,7 +323,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 2731, y: 1318}
+    uvTransform: {x: 3133, y: 4}
     spritePosition: {x: 3962, y: 4983}
   - name: AVAMBRACCIO (S)
     originalName: 
@@ -336,7 +336,7 @@ ScriptedImporter:
       y: 1007
       width: 1168
       height: 303
-    spriteID: 0c9acd94ebcc13046856beaf2359a7cc
+    spriteID: 9da86b7ed730e4641914207935d5c289
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -355,9 +355,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 2918
-      width: 1233
-      height: 1688
-    spriteID: 423c62be5fb9180428b7b1dc6f977b57
+      width: 1294
+      height: 1650
+    spriteID: 577877b4d14aff046934fb49f47218d1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -366,7 +366,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 2918}
-    spritePosition: {x: 1760, y: 2437}
+    spritePosition: {x: 1775, y: 2470}
   - name: ROLLERBOOTS (S)
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -376,9 +376,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 1603
       y: 4011
-      width: 746
-      height: 1685
-    spriteID: febaf9b4c1919424f884fdd73555f790
+      width: 742
+      height: 1708
+    spriteID: 8211231da70468f40835ca4d53e72189
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -387,7 +387,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 1603, y: 4011}
-    spritePosition: {x: 2264, y: 918}
+    spritePosition: {x: 2366, y: 934}
   - name: PIEDE (S)
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -395,11 +395,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1603
-      y: 4
-      width: 1522
-      height: 995
-    spriteID: 8568613f641a68b40b92796684c72ae9
+      x: 4
+      y: 6468
+      width: 1526
+      height: 1003
+    spriteID: ecef404e1e6784649900570a05f7bebc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -407,8 +407,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1603, y: 4}
-    spritePosition: {x: 1862, y: 114}
+    uvTransform: {x: 4, y: 6468}
+    spritePosition: {x: 2048, y: 113}
   characterData:
     bones: []
     parts: []
@@ -424,55 +424,7 @@ ScriptedImporter:
     characterGroups: []
     pivot: {x: 0, y: 0}
     boneReadOnly: 0
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   mosaicLayers: 1
   characterMode: 1
   documentPivot: {x: 0, y: 0}
@@ -497,7 +449,7 @@ ScriptedImporter:
     spriteName: TESTA
     isGroup: 0
     parentIndex: -1
-    spriteID: 99b9f33ad90922444a3f77d2df3bba3c
+    spriteID: 2efecd64c1040f04e8dfb0f044670278
     layerID: 285
     mosaicPosition: {x: 1603, y: 1007}
     flatten: 0
@@ -507,9 +459,9 @@ ScriptedImporter:
     spriteName: BRACCIO (D)
     isGroup: 0
     parentIndex: -1
-    spriteID: 9184d59e58bf03a4dade618253b5e63e
+    spriteID: f31a4041e032edf48978cc0d0f2e6ed6
     layerID: 286
-    mosaicPosition: {x: 1603, y: 5704}
+    mosaicPosition: {x: 1603, y: 5727}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -517,9 +469,9 @@ ScriptedImporter:
     spriteName: AVAMBRACCIO (D)
     isGroup: 0
     parentIndex: -1
-    spriteID: f0224a14a6bd7f24c9ec781837b18bae
+    spriteID: 0976ad3f7bf3f2d4baf8ff5a808d2531
     layerID: 287
-    mosaicPosition: {x: 1603, y: 6970}
+    mosaicPosition: {x: 1603, y: 6851}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -527,9 +479,9 @@ ScriptedImporter:
     spriteName: MANO (D)
     isGroup: 0
     parentIndex: -1
-    spriteID: d72e733ab76e9134681e4e7096542001
+    spriteID: 18932db7d2df54442b20c9a7c2fc6a0f
     layerID: 288
-    mosaicPosition: {x: 3133, y: 4}
+    mosaicPosition: {x: 2053, y: 6851}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -537,9 +489,9 @@ ScriptedImporter:
     spriteName: COSCIA (D)
     isGroup: 0
     parentIndex: -1
-    spriteID: 1a062b6e1bc8f164e98177cca4d22f45
+    spriteID: ccf17fb14b00f784db7846b9d116f187
     layerID: 289
-    mosaicPosition: {x: 4, y: 4614}
+    mosaicPosition: {x: 4, y: 4576}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -547,7 +499,7 @@ ScriptedImporter:
     spriteName: ROLLERBOOTS (D)
     isGroup: 0
     parentIndex: -1
-    spriteID: 4e0f7f638aaabda4fa9b79499a087639
+    spriteID: 0a23817d6a0125747a13953c02ab622a
     layerID: 290
     mosaicPosition: {x: 1603, y: 2310}
     flatten: 0
@@ -557,9 +509,9 @@ ScriptedImporter:
     spriteName: PIEDE (D)
     isGroup: 0
     parentIndex: -1
-    spriteID: 599987edd6ab92443aa9320397eda365
+    spriteID: b71aa6289097c0146887163adc4fa443
     layerID: 291
-    mosaicPosition: {x: 4, y: 6506}
+    mosaicPosition: {x: 1603, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -567,9 +519,9 @@ ScriptedImporter:
     spriteName: COLLO
     isGroup: 0
     parentIndex: -1
-    spriteID: 41b4e849845fa76408c8f7187be49a5b
+    spriteID: 654c8bb99f2a3114aa6569630fa0f488
     layerID: 292
-    mosaicPosition: {x: 3537, y: 4}
+    mosaicPosition: {x: 3133, y: 397}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -577,7 +529,7 @@ ScriptedImporter:
     spriteName: BUSTO
     isGroup: 0
     parentIndex: -1
-    spriteID: 2eab98345aa8c004093964b743d4e8c0
+    spriteID: 641a6bebe0dac0d45b7d1510e269c927
     layerID: 293
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -587,9 +539,9 @@ ScriptedImporter:
     spriteName: BRACCIO (S)
     isGroup: 0
     parentIndex: -1
-    spriteID: c089325228113664ba89521619649902
+    spriteID: 7a781fb11f701a849bc8deafbc04f08c
     layerID: 294
-    mosaicPosition: {x: 4, y: 7509}
+    mosaicPosition: {x: 4, y: 7479}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -597,9 +549,9 @@ ScriptedImporter:
     spriteName: MANO (S)
     isGroup: 0
     parentIndex: -1
-    spriteID: de1f94eac0572d5468472174d4a54d3c
+    spriteID: f08b5248501d44d458627a67c6b9648a
     layerID: 295
-    mosaicPosition: {x: 2731, y: 1318}
+    mosaicPosition: {x: 3133, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -607,7 +559,7 @@ ScriptedImporter:
     spriteName: AVAMBRACCIO (S)
     isGroup: 0
     parentIndex: -1
-    spriteID: 0c9acd94ebcc13046856beaf2359a7cc
+    spriteID: 9da86b7ed730e4641914207935d5c289
     layerID: 296
     mosaicPosition: {x: 2731, y: 1007}
     flatten: 0
@@ -617,7 +569,7 @@ ScriptedImporter:
     spriteName: COSCIA (S)
     isGroup: 0
     parentIndex: -1
-    spriteID: 423c62be5fb9180428b7b1dc6f977b57
+    spriteID: 577877b4d14aff046934fb49f47218d1
     layerID: 297
     mosaicPosition: {x: 4, y: 2918}
     flatten: 0
@@ -627,7 +579,7 @@ ScriptedImporter:
     spriteName: ROLLERBOOTS (S)
     isGroup: 0
     parentIndex: -1
-    spriteID: febaf9b4c1919424f884fdd73555f790
+    spriteID: 8211231da70468f40835ca4d53e72189
     layerID: 298
     mosaicPosition: {x: 1603, y: 4011}
     flatten: 0
@@ -637,9 +589,9 @@ ScriptedImporter:
     spriteName: PIEDE (S)
     isGroup: 0
     parentIndex: -1
-    spriteID: 8568613f641a68b40b92796684c72ae9
+    spriteID: ecef404e1e6784649900570a05f7bebc
     layerID: 299
-    mosaicPosition: {x: 1603, y: 4}
+    mosaicPosition: {x: 4, y: 6468}
     flatten: 0
     isImported: 1
     isVisible: 1
