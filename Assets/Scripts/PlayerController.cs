@@ -18,12 +18,13 @@ public class PlayerController : MonoBehaviour
     bool isAccelerationPressed;
     bool canMove = true;
     public static Vector3  playerPos;
-
+    Animator myAnimator;
 
 
     void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
         rollerBladesCollider = GetComponentInChildren<CapsuleCollider2D>();
         ground = LayerMask.GetMask("Ground");
         Debugger.DebuggerLoader(ref logger);
@@ -50,8 +51,7 @@ public class PlayerController : MonoBehaviour
         if (value.isPressed)
         {
             isAccelerationPressed = true;
-            logger.Log("Il tasto è stato premuto",this);
-            
+            logger.Log("Il tasto è stato premuto",this);            
         }
         else if(!value.isPressed)
         {
@@ -78,16 +78,23 @@ public class PlayerController : MonoBehaviour
     {
         if (rollerBladesCollider.IsTouchingLayers(ground))
         {
+            myAnimator.SetBool("isJumping", false);
             if (isAccelerationPressed)
             {
+                myAnimator.SetBool("isSkating", true);
                 playerRb.AddForce(Vector2.right * forceMagnitude * Time.fixedDeltaTime, ForceMode2D.Force);
             }
             else
             {   
                 //Questa formula crea l'inerzia desiderata mettendo una forza opposta al vettore sull'asse x
+                myAnimator.SetBool("isSkating", false);
                 Vector2 resistanceForce = new Vector2(-playerRb.velocity.x * airResistance * Time.fixedDeltaTime, 0f);
                 playerRb.AddForce(resistanceForce, ForceMode2D.Force);
             }
+        }
+        else
+        {
+            myAnimator.SetBool("isJumping", true);
         }
     }
 
