@@ -10,7 +10,7 @@ public class CollisionDetection : MonoBehaviour
    [SerializeField][Range(0f, 1f)] float crashSoundClipVolume;
    [Header("Debugging")]
    [SerializeField]Debugger logger;
-   bool hasCrashed;
+   public bool hasCrashed;
    DeathCounter deathCounter;
  
    void Awake()
